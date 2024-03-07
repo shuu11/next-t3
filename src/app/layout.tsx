@@ -1,5 +1,8 @@
 import '@/styles/globals.css'
 
+import { NextAuthProvider } from '@/provider/nextauth'
+import { getServerAuthSession } from '@/server/auth'
+
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/shadcn/theme/theme-provider'
 
@@ -16,16 +19,20 @@ export const metadata = {
 	icons: [{ rel: 'icon', url: '/favicon.ico' }],
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const session = await getServerAuthSession()
+
 	return (
-		<html lang="en">
+		<html lang="ja">
 			<body className={`font-sans ${inter.variable}`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange>
-					<TRPCReactProvider>{children}</TRPCReactProvider>
+					<NextAuthProvider session={session}>
+						<TRPCReactProvider>{children}</TRPCReactProvider>
+					</NextAuthProvider>
 				</ThemeProvider>
 			</body>
 		</html>
