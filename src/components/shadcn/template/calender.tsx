@@ -1,18 +1,11 @@
-"use client"
+'use client'
 
-import {useState} from "react";
+import { useState } from 'react'
 
-import { Calendar } from "@/components/shadcn/ui/calendar";
+import { Calendar } from '@/components/shadcn/ui/calendar'
 
 export function CalendarDemo() {
-  const [date, setDate] = useState<Date | undefined>(new Date())
+	const [date, setDate] = useState<Date | undefined>(new Date())
 
-  return (
-    <Calendar
-      mode="single"
-      selected={date}
-      onSelect={setDate}
-      className="rounded-md border"
-    />
-  )
+	return <Calendar mode="single" selected={date} onSelect={setDate} className="rounded-md border" />
 }
