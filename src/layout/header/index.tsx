@@ -1,7 +1,7 @@
-import { Logo } from '@/layout/header/logo'
-import { Login } from '@/layout/header/login'
-import { Icon } from '@/layout/header/icon'
-import { DarkMode } from '@/layout/header/dark-mode'
+import { Logo } from '@/components/header/logo'
+import { Login } from '@/components/header/login'
+import { Icon } from '@/components/header/icon'
+import { DarkMode } from '@/components/header/dark-mode'
 
 export function Header() {
 	return (
