@@ -6,7 +6,7 @@ export default async function Auth() {
 	const session = await getServerAuthSession()
 
 		if(session){
-			redirect('/')
+			redirect('/mfas')
 		}
 		else{
 			redirect('/')
