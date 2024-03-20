@@ -1,6 +1,6 @@
 import { AlertCircle } from 'lucide-react'
 
-import { Alert, AlertDescription, AlertTitle } from '@/@shadcn/ui/alert'
+import { Alert, AlertDescription, AlertTitle } from '@shadcn/ui/alert'
 
 export function AlertDestructive() {
 	return (

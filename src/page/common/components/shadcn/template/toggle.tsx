@@ -1,6 +1,6 @@
 import { Italic } from 'lucide-react'
 
-import { Toggle } from '@/@shadcn/ui/toggle'
+import { Toggle } from '@shadcn/ui/toggle'
 
 export function ToggleWithText() {
 	return (

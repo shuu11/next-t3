@@ -1,8 +1,8 @@
 'use client'
 
-import { Button } from '@/@shadcn/ui/button'
-import { ToastAction } from '@/@shadcn/ui/toast'
-import { useToast } from '@/@shadcn/ui/use-toast'
+import { Button } from '@shadcn/ui/button'
+import { ToastAction } from '@shadcn/ui/toast'
+import { useToast } from '@shadcn/ui/use-toast'
 
 export function ToastWithAction() {
 	const { toast } = useToast()

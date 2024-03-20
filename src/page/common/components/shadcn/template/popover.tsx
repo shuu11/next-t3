@@ -1,7 +1,7 @@
-import { Button } from '@/@shadcn/ui/button'
-import { Input } from '@/@shadcn/ui/input'
-import { Label } from '@/@shadcn/ui/label'
-import { Popover, PopoverContent, PopoverTrigger } from '@/@shadcn/ui/popover'
+import { Button } from '@shadcn/ui/button'
+import { Input } from '@shadcn/ui/input'
+import { Label } from '@shadcn/ui/label'
+import { Popover, PopoverContent, PopoverTrigger } from '@shadcn/ui/popover'
 
 export function PopoverDemo() {
 	return (

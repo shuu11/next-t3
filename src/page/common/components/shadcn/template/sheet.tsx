@@ -1,6 +1,6 @@
-import { Button } from '@/@shadcn/ui/button'
-import { Input } from '@/@shadcn/ui/input'
-import { Label } from '@/@shadcn/ui/label'
+import { Button } from '@shadcn/ui/button'
+import { Input } from '@shadcn/ui/input'
+import { Label } from '@shadcn/ui/label'
 import {
 	Sheet,
 	SheetClose,
@@ -10,7 +10,7 @@ import {
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
-} from '@/@shadcn/ui/sheet'
+} from '@shadcn/ui/sheet'
 
 export function SheetDemo() {
 	return (

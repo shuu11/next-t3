@@ -12,7 +12,7 @@ import {
 	CommandList,
 	CommandSeparator,
 	CommandShortcut,
-} from '@/@shadcn/ui/command'
+} from '@shadcn/ui/command'
 
 export function CommandDialogDemo() {
 	const [open, setOpen] = useState(false)

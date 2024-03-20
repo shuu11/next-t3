@@ -8,8 +8,8 @@ import {
 	AlertDialogHeader,
 	AlertDialogTitle,
 	AlertDialogTrigger,
-} from '@/@shadcn/ui/alert-dialog'
-import { Button } from '@/@shadcn/ui/button'
+} from '@shadcn/ui/alert-dialog'
+import { Button } from '@shadcn/ui/button'
 
 export function AlertDialogDemo() {
 	return (

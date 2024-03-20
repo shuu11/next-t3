@@ -1,4 +1,4 @@
-import { Skeleton } from '@/@shadcn/ui/skeleton'
+import { Skeleton } from '@shadcn/ui/skeleton'
 
 export function SkeletonDemo() {
 	return (

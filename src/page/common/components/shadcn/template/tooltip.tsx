@@ -1,5 +1,5 @@
-import { Button } from '@/@shadcn/ui/button'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/@shadcn/ui/tooltip'
+import { Button } from '@shadcn/ui/button'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@shadcn/ui/tooltip'
 
 export function TooltipDemo() {
 	return (

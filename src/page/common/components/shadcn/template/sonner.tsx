@@ -1,6 +1,6 @@
 import { toast } from 'sonner'
 
-import { Button } from '@/@shadcn/ui/button'
+import { Button } from '@shadcn/ui/button'
 
 export function SonnerDemo() {
 	return (

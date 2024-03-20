@@ -1,8 +1,8 @@
 import { CalendarDays } from 'lucide-react'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/@shadcn/ui/avatar'
-import { Button } from '@/@shadcn/ui/button'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/@shadcn/ui/hover-card'
+import { Avatar, AvatarFallback, AvatarImage } from '@shadcn/ui/avatar'
+import { Button } from '@shadcn/ui/button'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@shadcn/ui/hover-card'
 
 export function HoverCardDemo() {
 	return (

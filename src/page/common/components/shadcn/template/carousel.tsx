@@ -1,11 +1,11 @@
-import { Card, CardContent } from '@/@shadcn/ui/card'
+import { Card, CardContent } from '@shadcn/ui/card'
 import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
 	CarouselNext,
 	CarouselPrevious,
-} from '@/@shadcn/ui/carousel'
+} from '@shadcn/ui/carousel'
 
 export function CarouselDemo() {
 	return (
