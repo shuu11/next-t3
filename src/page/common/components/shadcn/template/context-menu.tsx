@@ -12,7 +12,7 @@ import {
 	ContextMenuSubContent,
 	ContextMenuSubTrigger,
 	ContextMenuTrigger,
-} from '@/page/common/components/shadcn/ui/context-menu'
+} from '@/@shadcn/ui/context-menu'
 
 export function ContextMenuDemo() {
 	return (

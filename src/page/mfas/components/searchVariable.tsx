@@ -3,9 +3,9 @@
 import { useRecoilState } from 'recoil'
 import { filterState } from '@/state/filter'
 
-import { Input } from '@/page/common/components/shadcn/ui/input'
-import { Label } from '@/page/common/components/shadcn/ui/label'
-import { MotionUpper } from '@/page/common/components/framer-motion/upper'
+import { Input } from '@common/components/shadcn/ui/input'
+import { Label } from '@common/components/shadcn/ui/label'
+import { MotionUpper } from '@common/components/framer-motion/upper'
 
 export function SearchVariable() {
 	const [filter, setFilter] = useRecoilState(filterState)

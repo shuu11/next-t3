@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { Progress } from '@/page/common/components/shadcn/ui/progress'
+import { Progress } from '@/@shadcn/ui/progress'
 
 export function ProgressDemo() {
 	const [progress, setProgress] = React.useState(13)

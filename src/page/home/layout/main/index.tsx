@@ -1,7 +1,7 @@
 import { RocketIcon, Star } from 'lucide-react'
 
-import { MotionUpper } from '@/page/common/components/framer-motion/upper'
-import { LinkRoute } from '@/page/common/components/LinkRoute'
+import { MotionUpper } from '@common/components/framer-motion/upper'
+import { LinkRoute } from '@common/components/LinkRoute'
 
 export function Main() {
 	return (

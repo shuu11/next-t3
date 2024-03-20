@@ -4,7 +4,7 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { cn } from '@/page/common/lib/utils'
-// import { Icons } from "@/page/common/components/shadcn/ui/icons"
+// import { Icons } from "@/@shadcn/ui/icons"
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -13,7 +13,7 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
-} from '@/page/common/components/shadcn/ui/navigation-menu'
+} from '@/@shadcn/ui/navigation-menu'
 
 const components: { title: string; href: string; description: string }[] = [
 	{

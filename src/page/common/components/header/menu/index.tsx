@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-import { cn } from '@/page/common/lib/utils'
+import { cn } from '@common/lib/utils'
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -12,7 +12,7 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
-} from '@/page/common/components/shadcn/ui/navigation-menu'
+} from '@common/components/shadcn/ui/navigation-menu'
 
 const components: { title: string; href: string; description: string }[] = [
 	{

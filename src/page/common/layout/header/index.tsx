@@ -1,9 +1,9 @@
-import { Logo } from '@/page/common/components/header/logo'
+import { Logo } from '@common/components/header/logo'
 
-import { Menu } from '@/page/common/components/header/menu'
+import { Menu } from '@common/components/header/menu'
 
-import { Icons } from '@/page/common/components/header/icons'
-import { IconsMobile } from '@/page/common/components/header/icons-mobile'
+import { Icons } from '@common/components/header/icons'
+import { IconsMobile } from '@common/components/header/icons-mobile'
 
 export function Header() {
 	return (

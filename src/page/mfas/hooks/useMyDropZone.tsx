@@ -9,41 +9,48 @@ import { type MapdataState } from '@/state/mapdata'
 import { fileState } from '@/state/file'
 import { type FileState } from '@/state/file'
 
-import { parseMapFileContent } from '@/page/mfas/lib/parseMapFileContent'
+import { parseMapFileContent } from '@mfas/lib/parseMapFileContent'
 
 export const useMyDropZone = () => {
 	const [mapdata, setMapdata] = useRecoilState<MapdataState[]>(mapdataState)
 	const [file, setFile] = useRecoilState<FileState>(fileState)
 
-	const onFileUploaded = (content: string) => {
-		const data = parseMapFileContent(content)
-		setMapdata(data)
-	}
-
 	const onDrop = useCallback(
-		async (acceptedFiles: any) => {
-			const acceptedFile = acceptedFiles[0]
+		(acceptedFiles: File[]) => {
+			if (acceptedFiles.length === 0) {
+				return // acceptedFilesが空の場合は処理を中止する
+			}
+
+			const acceptedFile = acceptedFiles[0] as File
 			const reader = new FileReader()
 
 			reader.onloadstart = () => {
 				setFile({
 					name: acceptedFile.name,
+					size: acceptedFile.size,
 					isLoading: true,
 				})
 			}
 
 			reader.onload = () => {
 				const content = reader.result as string
+
+				const onFileUploaded = (content: string) => {
+					const data = parseMapFileContent(content)
+					setMapdata(data)
+				}
+
 				onFileUploaded(content)
 
 				setFile({
 					name: acceptedFile.name,
+					size: acceptedFile.size,
 					isLoading: false,
 				})
 			}
 			reader.readAsText(acceptedFile)
 		},
-		[onFileUploaded],
+		[setFile, setMapdata],
 	)
 
 	const { getRootProps, getInputProps, isDragActive } = useDropzone({

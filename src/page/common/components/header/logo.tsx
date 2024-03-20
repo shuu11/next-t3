@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Avatar, AvatarImage, AvatarFallback } from '@/page/common/components/shadcn/ui/avatar'
+import { Avatar, AvatarImage, AvatarFallback } from '@common/components/shadcn/ui/avatar'
 
 export function Logo() {
 	return (

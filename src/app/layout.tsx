@@ -2,6 +2,8 @@ import '@/styles/globals.css'
 
 import { Provider } from '@/provider'
 
+import { Toaster } from '@shadcn/ui/sonner'
+
 import { Inter } from 'next/font/google'
 
 const inter = Inter({
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="ja">
 			<body className={`font-sans ${inter.variable}`}>
 				<Provider>{children}</Provider>
+				<Toaster />
 			</body>
 		</html>
 	)

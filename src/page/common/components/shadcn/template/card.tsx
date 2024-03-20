@@ -1,4 +1,4 @@
-import { Button } from '@/page/common/components/shadcn/ui/button'
+import { Button } from '@/@shadcn/ui/button'
 import {
 	Card,
 	CardContent,
@@ -6,16 +6,10 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from '@/page/common/components/shadcn/ui/card'
-import { Input } from '@/page/common/components/shadcn/ui/input'
-import { Label } from '@/page/common/components/shadcn/ui/label'
-import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-} from '@/page/common/components/shadcn/ui/select'
+} from '@/@shadcn/ui/card'
+import { Input } from '@/@shadcn/ui/input'
+import { Label } from '@/@shadcn/ui/label'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/@shadcn/ui/select'
 
 export function CardWithForm() {
 	return (

@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { cn } from '@/page/common/lib/utils'
 // import { useMediaQuery } from "@/hooks/use-media-query"
-import { Button } from '@/page/common/components/shadcn/ui/button'
+import { Button } from '@/@shadcn/ui/button'
 import {
 	Dialog,
 	DialogContent,
@@ -10,7 +10,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
-} from '@/page/common/components/shadcn/ui/dialog'
+} from '@/@shadcn/ui/dialog'
 import {
 	Drawer,
 	DrawerClose,
@@ -20,9 +20,9 @@ import {
 	DrawerHeader,
 	DrawerTitle,
 	DrawerTrigger,
-} from '@/page/common/components/shadcn/ui/drawer'
-import { Input } from '@/page/common/components/shadcn/ui/input'
-import { Label } from '@/page/common/components/shadcn/ui/label'
+} from '@/@shadcn/ui/drawer'
+import { Input } from '@/@shadcn/ui/input'
+import { Label } from '@/@shadcn/ui/label'
 
 export function DrawerDialogDemo() {
 	const [open, setOpen] = useState(false)

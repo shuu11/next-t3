@@ -1,5 +1,5 @@
 import { ExternalLink, Twitter } from 'lucide-react'
-import { LinkRoute } from '@/page/common/components/LinkRoute'
+import { LinkRoute } from '@common/components/LinkRoute'
 
 export function Footer() {
 	return (

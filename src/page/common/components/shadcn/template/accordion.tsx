@@ -3,7 +3,7 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '@/page/common/components/shadcn/ui/accordion'
+} from '@/@shadcn/ui/accordion'
 
 export function AccordionDemo() {
 	return (

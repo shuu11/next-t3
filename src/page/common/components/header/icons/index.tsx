@@ -1,6 +1,6 @@
-import { Login } from '@/page/common/components/header/icons/login'
-import { Icon } from '@/page/common/components/header/icons/icon'
-import { DarkMode } from '@/page/common/components/header/icons/dark-mode'
+import { Login } from '@common/components/header/icons/login'
+import { Icon } from '@common/components/header/icons/icon'
+import { DarkMode } from '@common/components/header/icons/dark-mode'
 
 type Props = {
 	className?: string

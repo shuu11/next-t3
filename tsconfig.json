@@ -33,7 +33,22 @@
 		"paths": {
 			"@/*": [
 				"./src/*"
-			]
+			],
+			"@common/*": [
+				"./src/page/common/*"
+			],
+			"@home/*": [
+				"./src/page/home/*"
+			],
+			"@mfas/*": [
+				"./src/page/mfas/*"
+			],
+			"@shadcn/*": [
+				"./src/page/common/components/shadcn/*"
+			],
+			"@framer-motion/*": [
+				"./src/page/common/components/framer-motion/*"
+			],
 		}
 	},
 	"include": [

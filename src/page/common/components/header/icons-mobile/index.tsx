@@ -1,11 +1,11 @@
-import { Sheet, SheetContent, SheetTrigger } from '@/page/common/components/shadcn/ui/sheet'
+import { Sheet, SheetContent, SheetTrigger } from '@common/components/shadcn/ui/sheet'
 
-import { Login } from '@/page/common/components/header/icons-mobile/login'
-import { Icon } from '@/page/common/components/header/icons-mobile/icon'
-import { DarkMode } from '@/page/common/components/header/icons-mobile/dark-mode'
-import { Hamburger } from '@/page/common/components/header/icons-mobile/hamburger'
+import { Login } from '@common/components/header/icons-mobile/login'
+import { Icon } from '@common/components/header/icons-mobile/icon'
+import { DarkMode } from '@common/components/header/icons-mobile/dark-mode'
+import { Hamburger } from '@common/components/header/icons-mobile/hamburger'
 
-import { MenuMobile } from '@/page/common/components/header/menu-moblie'
+import { MenuMobile } from '@common/components/header/menu-moblie'
 
 type Props = {
 	className?: string

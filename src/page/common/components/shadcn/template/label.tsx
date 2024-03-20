@@ -1,5 +1,5 @@
-import { Checkbox } from '@/page/common/components/shadcn/ui/checkbox'
-import { Label } from '@/page/common/components/shadcn/ui/label'
+import { Checkbox } from '@/@shadcn/ui/checkbox'
+import { Label } from '@/@shadcn/ui/label'
 
 export function LabelDemo() {
 	return (

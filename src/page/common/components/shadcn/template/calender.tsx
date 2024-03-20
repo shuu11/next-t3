@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { Calendar } from '@/page/common/components/shadcn/ui/calendar'
+import { Calendar } from '@/@shadcn/ui/calendar'
 
 export function CalendarDemo() {
 	const [date, setDate] = useState<Date | undefined>(new Date())

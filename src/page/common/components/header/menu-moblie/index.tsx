@@ -3,9 +3,9 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '@/page/common/components/shadcn/ui/accordion'
+} from '@shadcn/ui/accordion'
 
-import { Separator } from '@/page/common/components/shadcn/ui/separator'
+import { Separator } from '@shadcn/ui/separator'
 import Link from 'next/link'
 
 export function MenuMobile() {

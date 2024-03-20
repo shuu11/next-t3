@@ -8,7 +8,7 @@ import {
 	SelectLabel,
 	SelectTrigger,
 	SelectValue,
-} from '@/page/common/components/shadcn/ui/select'
+} from '@/@shadcn/ui/select'
 
 export function SelectScrollable() {
 	return (

@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { Button } from '@/page/common/components/shadcn/ui/button'
+import { Button } from '@/@shadcn/ui/button'
 import {
 	Form,
 	FormControl,
@@ -12,9 +12,9 @@ import {
 	FormField,
 	FormItem,
 	FormLabel,
-} from '@/page/common/components/shadcn/ui/form'
-import { Switch } from '@/page/common/components/shadcn/ui/switch'
-import { toast } from '@/page/common/components/shadcn/ui/use-toast'
+} from '@/@shadcn/ui/form'
+import { Switch } from '@/@shadcn/ui/switch'
+import { toast } from '@/@shadcn/ui/use-toast'
 
 const FormSchema = z.object({
 	marketing_emails: z.boolean().default(false).optional(),

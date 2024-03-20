@@ -1,6 +1,6 @@
 import { unstable_noStore as noStore } from 'next/cache'
 import Link from 'next/link'
-import { Button } from '@/page/common/components/shadcn/ui/button'
+import { Button } from '@common/components/shadcn/ui/button'
 import { getServerAuthSession } from '@/server/auth'
 
 export async function Login() {
