@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Provider } from '@/provider'
 
 import { Toaster } from '@shadcn/ui/sonner'
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={`font-sans ${inter.variable}`}>
 				<Provider>{children}</Provider>
 				<Toaster />
+				<SpeedInsights />
 			</body>
 		</html>
 	)
