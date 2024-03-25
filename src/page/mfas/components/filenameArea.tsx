@@ -1,12 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { MoreHorizontal, Trash } from 'lucide-react'
+import { Icons } from '@shadcn/icons'
 
 import { useRecoilState } from 'recoil'
-import { type MapdataState, mapdataState } from '@/state/mapdata'
-import { type FileState, fileState } from '@/state/file'
-
+import { type MapdataState, mapdataState } from '@/global/state/mapdata'
+import { type FileState, fileState } from '@/global/state/file'
 
 import { Button } from '@common/components/shadcn/ui/button'
 
@@ -56,14 +55,14 @@ export function FilenameArea(props: Props) {
 					<DropdownMenu open={open} onOpenChange={setOpen}>
 						<DropdownMenuTrigger asChild>
 							<Button variant="ghost" size="sm">
-								<MoreHorizontal />
+								<Icons.moreHorizontal />
 							</Button>
 						</DropdownMenuTrigger>
 						<DropdownMenuContent align="end" className="w-[200px]">
 							<DropdownMenuLabel>Actions</DropdownMenuLabel>
 							<DropdownMenuGroup>
 								<DropdownMenuItem className="text-red-600" onClick={onClick}>
-									<Trash className="mr-2 h-4 w-4" />
+									<Icons.trash className="mr-2 h-4 w-4" />
 									Delete
 								</DropdownMenuItem>
 							</DropdownMenuGroup>

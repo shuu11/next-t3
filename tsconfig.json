@@ -34,6 +34,9 @@
 			"@/*": [
 				"./src/*"
 			],
+			"@global/*": [
+				"./src/global/*"
+			],
 			"@common/*": [
 				"./src/page/common/*"
 			],

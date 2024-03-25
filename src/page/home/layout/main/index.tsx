@@ -1,4 +1,4 @@
-import { RocketIcon, Star } from 'lucide-react'
+import { Icons } from '@shadcn/icons'
 
 import { MotionUpper } from '@common/components/framer-motion/upper'
 import { LinkRoute } from '@common/components/LinkRoute'
@@ -17,12 +17,12 @@ export function Main() {
 			<MotionUpper delay={0.4}>
 				<div className="flex">
 					<LinkRoute href="/mfas">
-						<RocketIcon size={12} className="mr-2" />
+						<Icons.rocket size={12} className="mr-2" />
 						Getting Started
 					</LinkRoute>
 
 					<LinkRoute href="https://github.com/">
-						<Star size={12} className="mr-2" />
+						<Icons.star size={12} className="mr-2" />
 						Star on GitHub
 					</LinkRoute>
 				</div>

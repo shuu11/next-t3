@@ -3,11 +3,11 @@ import { useDropzone } from 'react-dropzone'
 
 import { useRecoilState } from 'recoil'
 
-import { mapdataState } from '@/state/mapdata'
-import { type MapdataState } from '@/state/mapdata'
+import { mapdataState } from '@/global/state/mapdata'
+import { type MapdataState } from '@/global/state/mapdata'
 
-import { fileState } from '@/state/file'
-import { type FileState } from '@/state/file'
+import { fileState } from '@/global/state/file'
+import { type FileState } from '@/global/state/file'
 
 import { parseMapFileContent } from '@mfas/lib/parseMapFileContent'
 

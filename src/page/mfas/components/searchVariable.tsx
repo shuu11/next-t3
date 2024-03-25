@@ -1,7 +1,7 @@
 'use client'
 
 import { useRecoilState } from 'recoil'
-import { filterState } from '@/state/filter'
+import { filterState } from '@/global/state/filter'
 
 import { Input } from '@common/components/shadcn/ui/input'
 import { Label } from '@common/components/shadcn/ui/label'

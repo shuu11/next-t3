@@ -1,5 +1,5 @@
-import { ExternalLink, Twitter } from 'lucide-react'
 import { LinkRoute } from '@common/components/LinkRoute'
+import { Icons } from '@shadcn/icons'
 
 export function Footer() {
 	return (
@@ -12,12 +12,12 @@ export function Footer() {
 						<div className="flex items-center space-x-1">
 							<LinkRoute href="https://create.t3.gg/" className="flex items-center gap-1">
 								<p>T3 Stack</p>
-								<ExternalLink size={12} />
+								<Icons.externalLink size={12} />
 							</LinkRoute>
 						</div>
 					</div>
 					<LinkRoute href="https://twitter.com/">
-						<Twitter size={18} />
+						<Icons.twitter size={18} />
 					</LinkRoute>
 				</div>
 

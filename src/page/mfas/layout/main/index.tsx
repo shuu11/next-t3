@@ -1,7 +1,7 @@
 'use client'
 
 import { useRecoilState } from 'recoil'
-import { type FileState, fileState } from '@/state/file'
+import { type FileState, fileState } from '@/global/state/file'
 
 import { DataTable } from '@mfas/components/data-table'
 import { Dropzone } from '@mfas/components/dropzone'

@@ -14,11 +14,11 @@ import {
 	TableRow,
 } from '@common/components/shadcn/ui/table'
 
-import { filterState } from '@/state/filter'
-import { mapdataState } from '@/state/mapdata'
-import { type MapdataState } from '@/state/mapdata'
-import { fileState } from '@/state/file'
-import { type FileState } from '@/state/file'
+import { filterState } from '@/global/state/filter'
+import { mapdataState } from '@/global/state/mapdata'
+import { type MapdataState } from '@/global/state/mapdata'
+import { fileState } from '@/global/state/file'
+import { type FileState } from '@/global/state/file'
 
 import { Skeleton } from '@common/components/shadcn/ui/skeleton'
 import { MotionUpper } from '@common/components/framer-motion/upper'
