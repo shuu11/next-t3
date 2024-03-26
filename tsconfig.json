@@ -31,9 +31,6 @@
 		/* Path Aliases */
 		"baseUrl": ".",
 		"paths": {
-			"@/*": [
-				"./src/*"
-			],
 			"@global/*": [
 				"./src/global/*"
 			],
@@ -51,6 +48,9 @@
 			],
 			"@framer-motion/*": [
 				"./src/page/common/components/framer-motion/*"
+			],
+			"@/*": [
+				"./src/*"
 			],
 		}
 	},
