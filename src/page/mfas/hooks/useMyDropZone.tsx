@@ -1,19 +1,15 @@
 import { useCallback } from 'react'
+
+import { useAtom } from 'jotai'
+import { mapdataState, fileState } from '@/global/state'
+
 import { useDropzone } from 'react-dropzone'
-
-import { useRecoilState } from 'recoil'
-
-import { mapdataState } from '@/global/state/mapdata'
-import { type MapdataState } from '@/global/state/mapdata'
-
-import { fileState } from '@/global/state/file'
-import { type FileState } from '@/global/state/file'
 
 import { parseMapFileContent } from '@mfas/lib/parseMapFileContent'
 
 export const useMyDropZone = () => {
-	const [mapdata, setMapdata] = useRecoilState<MapdataState[]>(mapdataState)
-	const [file, setFile] = useRecoilState<FileState>(fileState)
+	const [mapdata, setMapdata] = useAtom(mapdataState)
+	const [file, setFile] = useAtom(fileState)
 
 	const onDrop = useCallback(
 		(acceptedFiles: File[]) => {

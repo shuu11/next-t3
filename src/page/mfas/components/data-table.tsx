@@ -1,8 +1,9 @@
 'use client'
 
-import { toast } from 'sonner'
+import { useAtom } from 'jotai'
+import { filterState, fileState, mapdataState } from '@/global/state'
 
-import { useRecoilState } from 'recoil'
+import { toast } from 'sonner'
 
 import {
 	Table,
@@ -14,12 +15,6 @@ import {
 	TableRow,
 } from '@common/components/shadcn/ui/table'
 
-import { filterState } from '@/global/state/filter'
-import { mapdataState } from '@/global/state/mapdata'
-import { type MapdataState } from '@/global/state/mapdata'
-import { fileState } from '@/global/state/file'
-import { type FileState } from '@/global/state/file'
-
 import { Skeleton } from '@common/components/shadcn/ui/skeleton'
 import { MotionUpper } from '@common/components/framer-motion/upper'
 
@@ -27,9 +22,9 @@ import CopyToClipBoard from 'react-copy-to-clipboard'
 import { CopyIcon } from 'lucide-react'
 
 export function DataTable() {
-	const [filter, setFilter] = useRecoilState(filterState)
-	const [mapdata, setMapdata] = useRecoilState<MapdataState[]>(mapdataState)
-	const [file, setFile] = useRecoilState<FileState>(fileState)
+	const [filter, setFilter] = useAtom(filterState)
+	const [mapdata, setMapdata] = useAtom(mapdataState)
+	const [file, setFile] = useAtom(fileState)
 
 	const filteredData = mapdata.filter((item) => item.variable.includes(filter))
 

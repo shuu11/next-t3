@@ -1,13 +1,12 @@
 'use client'
 
+import { useAtom } from 'jotai'
+import { hamburgerState } from '@/global/state'
+
 import { Spin as HamburgerReact } from 'hamburger-react'
 
-import { useRecoilState } from 'recoil'
-import { type HamburgerState } from '@/global/state/hamburger'
-import { hamburgerState } from '@/global/state/hamburger'
-
 export function Hamburger() {
-	const [hamburger, setHamburger] = useRecoilState<HamburgerState>(hamburgerState)
+	const [hamburger, setHamburger] = useAtom(hamburgerState)
 
 	const onToggle = (toggle: boolean) => {
 		setHamburger({

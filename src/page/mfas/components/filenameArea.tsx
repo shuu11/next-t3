@@ -1,11 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { Icons } from '@shadcn/icons'
 
-import { useRecoilState } from 'recoil'
-import { type MapdataState, mapdataState } from '@/global/state/mapdata'
-import { type FileState, fileState } from '@/global/state/file'
+import { useAtom } from 'jotai'
+import { mapdataState, fileState } from '@/global/state'
+
+import { Icons } from '@shadcn/icons'
 
 import { Button } from '@common/components/shadcn/ui/button'
 
@@ -30,8 +30,9 @@ export function FilenameArea(props: Props) {
 	const { name, size } = props
 
 	const [open, setOpen] = useState(false)
-	const [mapdata, setMapdata] = useRecoilState<MapdataState[]>(mapdataState)
-	const [mapfile, setMapfile] = useRecoilState<FileState>(fileState)
+
+	const [mapdata, setMapdata] = useAtom(mapdataState)
+	const [mapfile, setMapfile] = useAtom(fileState)
 
 	const onClick = () => {
 		setMapdata([])

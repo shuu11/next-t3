@@ -31,9 +31,6 @@
 		/* Path Aliases */
 		"baseUrl": ".",
 		"paths": {
-			"@global/*": [
-				"./src/global/*"
-			],
 			"@common/*": [
 				"./src/page/common/*"
 			],

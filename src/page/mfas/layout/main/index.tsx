@@ -1,7 +1,7 @@
 'use client'
 
-import { useRecoilState } from 'recoil'
-import { type FileState, fileState } from '@/global/state/file'
+import { useAtom } from 'jotai'
+import { fileState } from '@/global/state'
 
 import { DataTable } from '@mfas/components/data-table'
 import { Dropzone } from '@mfas/components/dropzone'
@@ -9,7 +9,7 @@ import { SearchVariable } from '@mfas/components/searchVariable'
 import { FilenameArea } from '@mfas/components/filenameArea'
 
 export function Main() {
-	const [file, setFile] = useRecoilState<FileState>(fileState)
+	const [file, setFile] = useAtom(fileState)
 
 	return (
 		<>

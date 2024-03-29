@@ -1,14 +1,14 @@
 'use client'
 
-import { useRecoilState } from 'recoil'
-import { filterState } from '@/global/state/filter'
+import { useAtom } from 'jotai'
+import { filterState } from '@/global/state'
 
 import { Input } from '@common/components/shadcn/ui/input'
 import { Label } from '@common/components/shadcn/ui/label'
 import { MotionUpper } from '@common/components/framer-motion/upper'
 
 export function SearchVariable() {
-	const [filter, setFilter] = useRecoilState(filterState)
+	const [filter, setFilter] = useAtom(filterState)
 
 	return (
 		<MotionUpper delay={0.2}>
