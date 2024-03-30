@@ -1,7 +1,7 @@
 import { Toaster } from '@shadcn/ui/sonner'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
-import { TailwindIndicator } from '@/global/tailwind-indicator'
+import { TailwindIndicator } from '@/global/components/tailwind-indicator'
 
 export function Global() {
 	return (
