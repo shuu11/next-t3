@@ -18,7 +18,7 @@ export function IconsMobile(props: Props) {
 		<nav className={className}>
 			<Login />
 			{/* <Icon /> */}
-			{/* <DarkMode /> */}
+			<DarkMode />
 
 			<Sheet>
 				<SheetTrigger>
